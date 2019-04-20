@@ -19,14 +19,25 @@ app.set('view engine', 'pug');
 // }); 
 
 
-// app.use(logger('dev'));
+app.use(logger('dev'));
 //app.use(logger('short'));
 //app.use(logger('common'));
-app.use(logger('combined'));
+//app.use(logger('combined'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser('secret code'));
+app.use(session({
+    resave:false,
+    saveUninitialized: false,
+    secret: 'secret code',
+    cookie: {
+      httpOnly: true,
+      secure: false,
+    }
+}));
+
+// app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
