@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-// view engine setup
+// view engine setup // 이미 있네?
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
