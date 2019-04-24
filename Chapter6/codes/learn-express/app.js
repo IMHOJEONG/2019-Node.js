@@ -13,7 +13,8 @@ var app = express();
 
 // view engine setup // 이미 있네?
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+// app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 
 // app.use(function(req,res,next){
 //   console.log(req.url, '저도 미들웨어입니다.');
