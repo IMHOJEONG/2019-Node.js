@@ -7,9 +7,9 @@
 - 자바스크립트 : 스크립트 언어 => 미리 컴파일을 하지 않아도 즉석에서 코드를 실행할 수 있음.
 - REPL(Read Eval Print Loop) : 입력한 코드를 읽고(Read), 해석하고(Eval), 결과물을 반환하고(Print), 종료할 때까지 반복한다고 함.
 - 노드의 REPL을 해보면, 
-    ![터미널에서 node 입력](./image/nodeexec.PNG)
+  - ![nodeexec](https://user-images.githubusercontent.com/11308147/71480763-2742e400-283e-11ea-9d15-80417eda4c49.PNG)
 - 간단한 문자열 출력
-	    ![예시](./image/nodeexec2.PNG)
+  - ![nodeexec2](https://user-images.githubusercontent.com/11308147/71480783-3d50a480-283e-11ea-952a-ab9912d9b039.PNG)
 - 우리가 입력한 코드를 REPL이 읽고(Read), 해석(Eval)한 뒤 바로 결과물을  출력해 주었음(Print)
 - 그리고 종료되기 전까지 우리의 입력을 기다림(Loop)
 - REPL을 종료하려면 ctrl+c 두 번 누르거나, REPL 창에 .exit를 입력하면 된다.
