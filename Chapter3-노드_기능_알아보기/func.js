@@ -1,12 +1,11 @@
 const { odd, even } = require('./var');
 
-function checkOddOrEven(num) {
-    if (num % 2) { // 홀수면
+function checkOddOrEven(num){
+    if(num % 2) 
+    {
         return odd;
-    } else {
-        return even;
     }
-
+    return even;
 }
 
 module.exports = checkOddOrEven;

@@ -1,13 +1,13 @@
 const { odd, even } = require('./var');
-const checkNumber = require('./func');
+const checkNumber = require('../../3장/func');
 
-function checkStringOddOrEven(str) {
-    if (str.length % 2) // 홀수면
+function checkStringOddOrEven(str)
+{
+    if(str.length % 2)
     {
         return odd;
-    } else {
-        return even;
     }
+    return even;
 }
 
 console.log(checkNumber(10));
